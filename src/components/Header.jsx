@@ -1,15 +1,17 @@
-import { useEffect} from "react"
+import { useContext, useEffect} from "react"
 import {NavLink} from "react-router-dom"
 import language from "./lang"
+import {ThemeContext} from "../context/themeContext.js"
 
 export default function Header(props){
     const {lang, setLang}=props
     const changeLang=(e)=>{setLang(e.target.value)}
     useEffect(()=>{
         localStorage.setItem("lastLang",JSON.stringify(lang))
-        console.log(lang);
-        console.log(localStorage);
     },[lang])
+
+    const{setTheme}=useContext(ThemeContext)
+    const changeTheme=(e)=>{setTheme(e.target.value)}
 
     return(
         <header>
@@ -18,7 +20,7 @@ export default function Header(props){
                 <NavLink to="/main/page1">{language[lang].p1}</NavLink>
                 <NavLink to="/main/page2">{language[lang].p2}</NavLink>
                 <NavLink to="/main/page3">{language[lang].p3}</NavLink>
-                <select name="color" id="color">
+                <select onChange={changeTheme} name="color" id="color">
                     <option value="dark">{language[lang].darkTheme}</option>
                     <option value="light">{language[lang].lightTheme}</option>
                 </select>

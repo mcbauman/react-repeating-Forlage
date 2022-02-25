@@ -1,11 +1,4 @@
-import react, { useState } from "react"
+import React from "react"
 
-export ThemeContext=React.createContext(null)
-
-export default const ThemeContextProvider=()=>{
-    const [theme,setTheme]=useState("dark")
-    const changeTheme=()=>{
-        theme=="dark"?setTheme("light"):setTheme("dark")
-    }
-
-}
+const defaultValue="dark";
+export const ThemeContext=React.createContext(defaultValue)
