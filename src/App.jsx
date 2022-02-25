@@ -17,8 +17,6 @@ export default function App() {
 
     useEffect(()=>{
         localStorage.setItem("currentTheme",JSON.stringify(theme))
-        console.log(localStorage);
-        console.log(theme);
     },[theme])
 
     return (

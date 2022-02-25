@@ -10,7 +10,7 @@ export default function Header(props){
         localStorage.setItem("lastLang",JSON.stringify(lang))
     },[lang])
 
-    const{setTheme}=useContext(ThemeContext)
+    const{theme,setTheme}=useContext(ThemeContext)
     const changeTheme=(e)=>{setTheme(e.target.value)}
 
     return(
@@ -20,7 +20,7 @@ export default function Header(props){
                 <NavLink to="/main/page1">{language[lang].p1}</NavLink>
                 <NavLink to="/main/page2">{language[lang].p2}</NavLink>
                 <NavLink to="/main/page3">{language[lang].p3}</NavLink>
-                <select onChange={changeTheme} name="color" id="color">
+                <select onChange={changeTheme} name="color" id="color" defaultValue={theme}>
                     <option value="dark">{language[lang].darkTheme}</option>
                     <option value="light">{language[lang].lightTheme}</option>
                 </select>
