@@ -41,12 +41,17 @@ body{
                 }
             }
             main{
-
-                h1{
-                    font-size: 5rem;
-                    color:rgb(255, 202, 202);
-                    background-color: rgb(40, 40, 40);
+                div{
+                    h1{
+                        font-size: 5rem;
+                        color:rgb(255, 202, 202);
+                        background-color: rgb(40, 40, 40);
+                    }
+                    img{
+                        width: 100%;
+                    }
                 }
+                
             }
             footer{
 
@@ -87,11 +92,17 @@ body{
                 }
             }
             main{
-
-                h1{
-                    font-size: 5rem;
-                    color:darkred;
+                div{
+                    h1{
+                        font-size: 5rem;
+                        color:rgb(40, 40, 40);
+                        background-color: rgb(255, 202, 202);
+                    }
+                    img{
+                        width: 100%;
+                    }
                 }
+                
             }
             footer{
 

@@ -34,11 +34,12 @@ export default function App() {
 // done - props!
 // done - useEffect
 // done - useState
-// import Image
+// done - import Image
 // overlay(login)
 // done - language switch (Day6-TodoList)
-// useContext
-// ThemeSwitch
+// done - useContext
+// done - ThemeSwitch
+// useRef
 // useReducer
 
 //fetch from API
