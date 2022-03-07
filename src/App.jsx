@@ -1,7 +1,7 @@
 import Header from "./components/Header.jsx"
 import Main from "./components/Main.jsx"
 import Footer from "./components/Footer.jsx"
-import { useContext, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import {ThemeContext} from "./context/themeContext"
 
 export const lastLang=localStorage.getItem("lastLang")
@@ -35,7 +35,6 @@ export default function App() {
 // done - useEffect
 // done - useState
 // done - import Image
-// overlay(login)
 // done - language switch (Day6-TodoList)
 // done - useContext
 // done - ThemeSwitch
